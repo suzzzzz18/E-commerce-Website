@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/about.css">
+    <title>about</title>
+</head>
+
+<body>
+    <div class="about"
+        style="background: url(./image/8.jpg) ; background-size: cover; height: 35rem; background-repeat: no-repeat;">
+        <nav style="margin-top:0rem ; ">
+            <div class="nav">
+                <nav>
+                    <div class="navmenu">
+                        <ul>
+                            <img src="./image/logo.png" style="height: 3.3rem;width: 3.5rem; margin: 1rem;">
+                            <li><a href="index.html" class="btn active">Home</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="research.html">Research</a></li>
+                            <li><a href="about.html">About</a></li>
+
+                            <input class="search" placeholder="Search.."
+                                style="height:25px; width:160px; border-radius: 13px; border: 1px solid grey; padding: 5px; margin-top:25px; margin-left: 15.7rem;">
+
+
+                            <li><img src="./image/shopping-cart.png"
+                                    style="height:30px; margin-right: 1rem; cursor: pointer;"></li>
+                            <button class="sign">Sign Up</button>
+                            <button onclick="document.getElementById('id01').style.display='block'"
+                                class="login">Login</button>
+                            <div id="id01" class="modal">
+
+                                <form class="modal-content" name="messageForm" onsubmit="validateForm()"
+                                    style="text-align: center; padding-top: 1rem;">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        style="background-color:red;margin-top:-1.8rem; color: aliceblue;border: none;margin-right: -2rem;">X</button>
+                                    <h1 style="color: white;">Login</h1>
+                                    <div class="container">
+                                        <input type="text" placeholder=" Username" name="uname" required
+                                            style="height: 2rem; width: 16rem; margin-top: 2.8rem; border: none; border-bottom: 1.8px solid rgb(255, 255, 255); background-color: transparent; color: black; margin-left: 0rem;"><br>
+                                        <input type="password" placeholder=" Password" name="password" required
+                                            style="height: 2rem; width: 16rem; margin-top: 2.6rem; border: none; border-bottom: 1.8px solid rgb(255, 255, 255); background-color: transparent; color: black;"><br><br>
+                                        <label style="margin-left: -8.5rem;">
+                                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                                        </label>
+                                        <br>
+                                        <button type="submit"
+                                            style="margin-top:3rem; padding-right: 1rem;height: 2.8rem; width: 12rem;font-size: 19px;border-radius: 15px;border: 0.6px solid transparent; background-color: white; font-family: 'Times New Roman', Times, serif; color: rgb(28, 28, 28);margin-right: 4rem;">Login
+                                            <span style="padding-left: 6rem; font-weight: 800;"> > </span></button>
+                                    </div>
+                                    <h3
+                                        style="margin-left: 1.9rem; margin-top: 8rem; letter-spacing: 0.3px; color: rgb(236, 236, 236); font-size: 15px;font-family: Arial, Helvetica, sans-serif; font-weight: 700;">
+                                        Login Via</h3><br><br>
+                                    <div class="social-link"
+                                        style="display: flex; margin-top: -1.8rem; margin-left: 8rem;">
+                                        <a href=""><img src="./image/fb.png"></a>
+                                        <a href=""><img src="./image/insta.png"></a>
+                                        <a href=""><img src="./image/twitter.png"></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </div>
+
+    <div class="about_us" style="margin:0.8rem; height: 26rem; display: flex;">
+        <img src="./image/about.jpg"
+            style="height: 25rem; width: 28rem; margin-top: 2rem; margin-left: 5.5rem; margin-right: 3rem; border-right: 2px solid blue; padding-right: 8rem;">
+        <div class="description" style="display: inline;">
+            <h1 style="margin-left: 12rem; margin-bottom: 2.5rem;">About Us</h1>
+            <p style="margin-top:4rem;margin-left: 3rem;">We are a team of four members. we each have equally put our efforts into building this website with specialization in our own field. We have done a great amount of research for developing 
+                this e-commerce website for the bonsai plant. We distributed our work equally among our members and worked as one to develop this e-commerce website and make sure of its originality. We are 
+                constantly researching and improving our website for making it easier and simple for our customers and providing the best out of our website.</p>
+        </div>
+    </div>
+
+    <div class="profiles" style="margin-top:5rem; background-color: rgb(175, 192, 255); height: 70rem; display: block;">
+        <div style="display: flex; justify-content: space-around;">
+            <div class="first-profile"
+                style="height:30rem; background-color: antiquewhite; width: 25rem; margin-top: 3.5rem;">
+                <img src="./image/suz.jpeg"
+                    style="height: 23rem; width: 23rem; margin-top: 1rem; margin-left: 1rem; margin-right: 1rem; display: inline;">
+                <h3 style="text-align: center; padding-top: 1rem;">Sujina Dangal</h3>
+                <a href="./cv.html"> <button
+                        style="margin-left: 10rem; margin-top: 0.7rem; border: 0px solid transparent; background-color:#94d851; padding: 7px 6px 7px 6px; color: rgb(255, 255, 255); font-size: 13px; border-radius: 5px; cursor: pointer;">View
+                        Cv</button></a>
+            </div>
+
+            <div class="first-profile"
+                style="height:30rem; background-color: antiquewhite; width: 25rem; margin-top: 3.5rem; ">
+                <img src="./image/hrithik.jpeg"
+                    style="height: 23rem; width: 23rem; margin-top: 1rem; margin-left: 1rem; margin-right: 1rem; display: inline;">
+                <h3 style="text-align: center; padding-top: 1rem;">Hrithik kumar Chorwar</h3>
+                <a href="./cv2.html"> <button
+                        style="margin-left: 10rem; margin-top: 0.7rem; border: 0px solid transparent; background-color:#94d851; padding: 7px 6px 7px 6px; color: rgb(255, 255, 255); font-size: 13px; border-radius: 5px; cursor: pointer;">View
+                        Cv</button></a>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-around;">
+            <div class="first-profile"
+                style="height:30rem; background-color: antiquewhite; width: 25rem; margin-top: 3.5rem; ">
+                <img src="./image/himal.jpg"
+                    style="height: 23rem; width: 23rem; margin-top: 1rem; margin-left: 1rem; margin-right: 1rem; display: inline;">
+                <h3 style="text-align: center; padding-top: 1rem;">Himal Sharma</h3>
+                <a href="./cv3.html"> <button
+                        style="margin-left: 10rem; margin-top: 0.7rem; border: 0px solid transparent; background-color:#94d851; padding: 7px 6px 7px 6px; color: rgb(255, 255, 255); font-size: 13px; border-radius: 5px;cursor: pointer;">View
+                        Cv</button></a>
+            </div>
+
+            <div class="first-profile"
+                style="height:30rem; background-color: antiquewhite; width: 25rem; margin-top: 3.5rem;">
+                <img src="./image/shiv.jpg"
+                    style="height: 23rem; width: 23rem; margin-top: 1rem; margin-left: 1rem; margin-right: 1rem; display: inline;">
+                <h3 style="text-align: center; padding-top: 1rem;">Shivendra Hari shrestha</h3>
+                <a href="./cv4.html"> <button
+                        style="margin-left: 10rem; margin-top: 0.7rem; border: 0px solid transparent; background-color:#94d851; padding: 7px 6px 7px 6px; color: rgb(255, 255, 255); font-size: 13px; border-radius: 5px;cursor: pointer;">View
+                        Cv</button></a>
+            </div>
+        </div>
+    </div>
+
+    <footer style="height: 15rem; background-color: #D8EAD6; margin-top: 5rem;">
+        <img src="./image/flogo.png" style="height:6rem; width: 4.7rem; margin-top: 2rem; margin-left: 5.5rem;">
+        <p style=" margin-left: 4rem; margin-top: 1rem; ">Copyright <span>&copy</span> Breathe Bonsai inc. <br>all
+            rights reserved
+        </p>
+        <div class="footer-link" style=" margin-left: 33rem; margin-top: -8.5rem;">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="">Product</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Research</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+        <div class="footer-link" style=" margin-left: 48rem; margin-top: -10.5rem;">
+            <h2>Our Services</h2>
+            <ul>
+                <li><a href="">Free Shipping</a></li>
+                <li><a href="">Secure Payment</a></li>
+                <li><a href="">Customer Support</a></li>
+            </ul>
+        </div>
+        <div style="float:right; margin-right: 15rem; margin-top: -8.5rem;">
+            <h2>Contact Us</h2>
+            <p style="padding-top: 9px;">9814848773</p>
+            <p style="padding-top: 5px;">hrithikrajnk@gmail.com</p>
+            <p style="padding-top: 5px;">Balkumari,Kathmandu</p>
+
+            <div class="social-link" style="display: flex; margin-top: 1rem;">
+                <a href=""><img src="./image/fb.png"></a>
+                <a href=""><img src="./image/insta.png"></a>
+                <a href=""><img src="./image/twitter.png"></a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

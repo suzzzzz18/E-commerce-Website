@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Blog - Technology: Boon or Bane? </title>
+    <meta name=“description” content=“HTML document”>
+    <meta name=“keywords” content=“HTML width=device-width”>
+    <link rel="stylesheet" href="./CSS/utility.css">
+    <link rel="stylesheet" href="./CSS/blogstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .main img {
+            margin-left: 25px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+    </style>
+    <!-- internal css used -->
+</head>
+
+<body>
+    <nav>
+        <div class="navmenu">
+            <ul>
+                <img src="./image/logo.png" style="height: 3.3rem;width: 3.5rem; margin: 1rem;">
+                <li><a href="#" class="btn active">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="about.html">About</a></li>
+
+                <input class="search" placeholder="Search.."
+                    style="height:25px; width:160px; border-radius: 13px; border: 1px solid grey; padding: 5px; margin-top:25px; margin-left: 15.7rem;">
+
+
+                <li><img src="./image/shopping-cart.png" style="height:30px; margin-right: 1rem; cursor: pointer;">
+                </li>
+                <button class="sign">Sign Up</button>
+                <button onclick="document.getElementById('id01').style.display='block'" class="login">Login</button>
+                <div id="id01" class="modal">
+
+                    <form class="modal-content" name="messageForm" onsubmit="validateForm()"
+                        style="text-align: center; padding-top: 1rem;">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            style="background-color:red;margin-top:-1.8rem; color: aliceblue;border: none;margin-right: -2rem;">X</button>
+                        <h1 style="color: white;">Login</h1>
+                        <div class="container">
+                            <input type="text" placeholder=" Username" name="uname" required
+                                style="height: 2rem; width: 16rem; margin-top: 2.8rem; border: none; border-bottom: 1.8px solid rgb(255, 255, 255); background-color: transparent; color: black; margin-left: 0rem;"><br>
+                            <input type="password" placeholder=" Password" name="password" required
+                                style="height: 2rem; width: 16rem; margin-top: 2.6rem; border: none; border-bottom: 1.8px solid rgb(255, 255, 255); background-color: transparent; color: black;"><br><br>
+                            <label style="margin-left: -8.5rem;">
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                            <br>
+                            <button type="submit"
+                                style="margin-top:3rem; padding-right: 1rem;height: 2.8rem; width: 12rem;font-size: 19px;border-radius: 15px;border: 0.6px solid transparent; background-color: white; font-family: 'Times New Roman', Times, serif; color: rgb(28, 28, 28);margin-right: 4rem;">Login
+                                <span style="padding-left: 6rem; font-weight: 800;"> > </span></button>
+                        </div>
+                        <h3
+                            style="margin-left: 1.9rem; margin-top: 8rem; letter-spacing: 0.3px; color: rgb(236, 236, 236); font-size: 15px;font-family: Arial, Helvetica, sans-serif; font-weight: 700;">
+                            Login Via</h3><br><br>
+                        <div class="social-link" style="display: flex; margin-top: -1.8rem; margin-left: 8rem;">
+                            <a href=""><img src="./image/fb.png"></a>
+                            <a href=""><img src="./image/insta.png"></a>
+                            <a href=""><img src="./image/twitter.png"></a>
+                        </div>
+                    </form>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!--this is the navigation bar-->
+    <div class="top device-width m-auto">
+        <h1 style="color:#f8f9fa"> Everything You Need To Know About Bonsai! </h1> <br>
+        <h2 style="color:#f8f9fa"> Get blogs dedicated to caring for your bonsai. </h2>
+        <!-- inline css used for font color -->
+    </div>
+    <div class="main1">
+        <center>
+            <h1> Technology: Boon or Bane? </h1>
+        </center>
+        <br>
+        <p> Sujina Dangal</p>
+        <p> January 3, 2023</p>
+        <br>
+        <br>
+        <img align="right" src="image/technology1.jpeg" style="height: 300px;">
+        <p> The word technology comprises a fairly broad scope, which can make it difficult to pinpoint an exact
+            definition for it, but commonly it can be considered as any scientific knowledge put to use for a practical
+            purpose. Technology has been an integral part of human life for centuries, but the development of digital
+            technologies over the past few decades has drastically changed the way we live and interact with one
+            another. With this, we must ask whether technology is truly a boon or a bane. </p>
+        <br>
+        <p> Technology has greatly revolutionized the way we live our lives, enabling us to connect and communicate with
+            people from all over the world in an instant and facilitating the sharing of information and ideas across
+            borders and cultures. The technological revolution has undeniably altered the way of life for everyone, but
+            there is no exception that it is a double-edged sword like everything else. </p>
+        <br>
+        <p> From the advent of the internet to the development of artificial intelligence, technology is ubiquitous in
+            our lives. Technology has made the world a much smaller place, opening a whole new realm of opportunities
+            for those who have access to it and enabling people to reach new heights of innovation and efficiency. By
+            increasing our approach to knowledge and resources, technology has enhanced education and opened up new
+            industries and chances for economic growth. Along with the development of technology, opportunities for
+            growth and collaboration have expanded, enabling us to work together to find solutions to global problems.
+            Plenty of medical advancements such as artificial intelligence and robotics have enabled us to diagnose and
+            treat diseases more accurately and with greater efficiency, resulting in improved patient outcomes. It has
+            enabled us to explore new horizons, from the depth of the ocean to outer space. The power of technology to
+            improve lives and expand our horizons is evident in the growth of communications and transportation, the
+            advances in medicine and education, the explosion of media outlets, and the global reach
+            of entertainment. Because technology has become such a crucial aspect of our everyday life, it can be
+            daunting to even fathom a future without technology. Regardless of how magnificent it is, it is important to
+            remember that technology is not infallible and can have some serious negative impacts on our lives. </p>
+        <br>
+        <p> For instance, the rise of digital technology has led to a decrease in social interaction. People are often
+            so reserved in their devices that they forget to pay attention to the people around them. The ever-growing
+            obsession with different social media platforms has made people so absorbed in their virtual lives that they
+            are often disconnected from their real lives and the people around them. People are so immersed in faking a
+            perfect life on their social media that they forget to actually live and are the victims of anxiety,
+            depression, and other mental health issues. Additionally, technology has also led to an increase in
+            cybercrime, as hackers can use technology to gain access to private information and commit various types of
+            digital fraud. Cyberbullying and harassment are at their highest peak; countless people are losing their
+            lives as a result. Millions of people could be out of work within the next few years and would have to find
+            new careers that do not require human intelligence. The World Economic Forum's Future of Jobs Report
+            predicts that many jobs will be replaced by computers and artificial intelligence in a few decades' time.
+            Furthermore, technology has also had a detrimental effect on the environment as the production of electronic
+            goods often involves the use of hazardous chemicals which are then released into the environment,
+            contributing to the production of dangerous pollutants and toxic wastes, which can have long-term effects on
+            the planet’s health. This is further compounded by the excessive and unnecessary use of electricity and the
+            improper disposal of electronic goods which leads to e-waste. The carbon footprint of technology is
+            significantly increasing due to the high production, manufacturing, and usage of electronic gadgets. </p>
+        <br>
+        <p> Although the technological breakthrough that has occurred over the past few decades has been beneficial, it
+            has also raised various concerns. These concerns need to be addressed in order for society to reap the full
+            benefits of technology. As technology continues to advance, it is essential to understand the potential
+            consequences of relying too heavily on technology and its impact on the environment. In conclusion, while
+            technology can be a great boon, it can also be a bane if not used responsibly. It is therefore of utmost
+            importance to be mindful of how we use technology and its potential effects on our lives. We must strive to
+            minimize the inevitable banes so that we may ensure the optimization of the boons to the best of our
+            abilities. </p>
+    </div>
+    <footer style="height: 15rem; background-color: #D8EAD6; margin-top: 5rem;">
+        <img src="./image/flogo.png" style="height:6rem; width: 4.7rem; margin-top: 2rem; margin-left: 5.5rem;">
+        <p style=" margin-left: 4rem; margin-top: 1rem; ">Copyright <span>&copy</span> Breathe Bonsai inc. <br>all
+            rights reserved
+        </p>
+        <div class="footer-link" style=" margin-left: 33rem; margin-top: -8.5rem;">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="">Product</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Research</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+        <div class="footer-link" style=" margin-left: 48rem; margin-top: -10.5rem;">
+            <h2>Our Services</h2>
+            <ul>
+                <li><a href="">Free Shipping</a></li>
+                <li><a href="">Secure Payment</a></li>
+                <li><a href="">Customer Support</a></li>
+            </ul>
+        </div>
+        <div style="float:right; margin-right: 15rem; margin-top: -8.5rem;">
+            <h2>Contact Us</h2>
+            <p style="padding-top: 9px;">9814848773</p>
+            <p style="padding-top: 5px;">hrithikrajnk@gmail.com</p>
+            <p style="padding-top: 5px;">Balkumari,Kathmandu</p>
+
+            <div class="social-link" style="display: flex; margin-top: 1rem;">
+                <a href=""><img src="./image/fb.png"></a>
+                <a href=""><img src="./image/insta.png"></a>
+                <a href=""><img src="./image/twitter.png"></a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- this is the footer -->
+    <!-- Login form code -->
+
+    <div id="id01" class="modal"
+        style="background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% ); height: 77vh; width: 27vw; margin-top: 7rem; margin-left: 32rem;">
+
+        <form class="modal2 " name="messageForm" onsubmit="validateForm()"
+            style="text-align: center; padding-top: 1rem;">
+            <h1 style="color: white;">Login</h1>
+            <input type="text" placeholder=" Username" name="fname" required required
+                style="height: 2rem; width: 16rem; margin-top: 4.5rem; border: none; border-bottom: 1.8px solid rgb(255, 255, 255); background-color: transparent; color: black;">
+
+            <input type="password" placeholder=" Password" name="password" required required
+                style="height: 2rem; width: 16rem; margin-top: 3rem; border: none; border-bottom: 1.8px solid rgb(255, 255, 255);  background-color: transparent;">
+
+            <button type="submit"
+                style="margin-top:3rem; padding-right: 1rem;height: 2.8rem; width: 12rem;font-size: 19px;border-radius: 15px;border: 0.6px solid transparent; background-color: white; font-family: 'Times New Roman', Times, serif; color: rgb(28, 28, 28);">Login
+                <span style="padding-left: 6rem; font-weight: 800;"> > </span></button><br>
+            <h3
+                style="float: right; margin-right: 3.1rem;letter-spacing: 0.3px; color: rgb(255, 255, 255); font-size: 15px;font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-top: 2.5rem;">
+                Login Via</h3><br><br>
+            <div class="social-link" style="display: flex;float: right; margin-right: -5.5rem; margin-top: 2rem;">
+                <a href=""><img src="./image/fb.png"></a>
+                <a href=""><img src="./image/insta.png"></a>
+                <a href=""><img src="./image/twitter.png"></a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var firstName = document.forms["messageForm"]["uname"].value;
+            var password = document.forms["messageForm"]["password"].value;
+
+            //alert(messageDetails);
+            if (firstName == "" || password == "") {
+                alert("Empty fields are present!!! please enter the values...")
+
+            }
+            else {
+                alert("Thank you for your feedback!!!")
+            }
+        }
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

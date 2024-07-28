@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+
+    <link rel="stylesheet" href="./CSS/reserch1.css">
+    <style>
+        body {
+            background-color: #edd3b2;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
+        .navmenu {
+            z-index: 2;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .header {
+            z-index: 1;
+            margin-top: 6rem;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid rgb(86, 194, 36);
+
+        }
+
+        th {
+            background-color: rgb(159, 152, 237);
+
+
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+            border-radius: 4px;
+        }
+
+        td {
+            background-color: rgb(187, 237, 175);
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            border-radius: 9px;
+        }
+
+        td:hover {
+            background-color: aquamarine;
+        }
+
+        table {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+            text-align: center;
+            border-radius: 4px;
+            background-color: black;
+        }
+
+        .sign {
+            margin-left: 32.4rem;
+        }
+
+        p {
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .header {
+            width: auto;
+            height: auto;
+            background-image: url(/image/background2.jpg);
+            margin-top: 6rem;
+            position: sticky;
+            padding-left: 5%;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+
+        h1 {
+            color: rgb(192, 85, 14);
+            text-align: center;
+        }
+
+        .rec {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            padding-top: 10px;
+        }
+
+        .photo {
+
+            flex: 50%;
+        }
+
+        .content {
+            width: 1000px;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-style: normal;
+            font-family: fantasy;
+        }
+
+        .res-home {
+            width: 1000px;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-style: normal;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* our page div styles */
+        .site {
+            display: flex;
+            flex-direction: row;
+            padding-top: 30px;
+            padding-bottom: 20px;
+
+        }
+
+        /* our page div hover styles */
+        .site:hover {
+
+            margin-bottom: 5px;
+            margin-top: 5px;
+            transition: 0.4s;
+        }
+
+        /* reference div hover styles */
+        .rec:hover {
+
+            margin-top: 5px;
+            margin-bottom: 5px;
+            transition: 0.4s;
+        }
+
+        /* hr line styles  */
+        .hr-line {
+            color: rgb(43, 44, 127);
+            /* height: 2px; */
+            background-color: azure;
+        }
+
+        /* hr line hover styles  */
+        .hr-line:hover {
+            background-color: rgb(41, 78, 158);
+            transition: 0.2s;
+
+        }
+
+        .src {
+            border: 3px;
+            border-radius: 10px;
+
+        }
+
+        .src:hover {
+            border-radius: 0px;
+            transition: 0.4s;
+            box-shadow: 5px 5px 1px 0 grey;
+            width: 670px;
+        }
+
+        .src:active {
+            border-radius: 0px;
+            transition: 0.45s;
+            box-shadow: 5px 5px 1px 0 rgb(188, 66, 147);
+            width: 400px;
+        }
+
+        .ref {
+            border-radius: 10px;
+        }
+
+        .ref:hover {
+            border-radius: 0px;
+            transition: 0.4s;
+            box-shadow: 5px 5px 1px 0 grey;
+            width: 670px;
+
+        }
+
+        .ref:active {
+            border-radius: 0px;
+            transition: 0.15s;
+            box-shadow: 5px 5px 1px 0 rgb(66, 170, 188);
+            width: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navmenu">
+            <ul>
+                <img src="./image/logo.png" style="height: 3.3rem;width: 3.5rem; margin: 1rem;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="about.html">About</a></li>
+
+                <!-- <input class="search" placeholder="Search.."
+                    style="height:25px; width:160px; border-radius: 13px; border: 1px solid grey; padding: 5px; margin-top:25px; margin-left: 15.7rem;"> -->
+
+
+                <!-- <li><img src="./image/shopping-cart.png"
+                        style="height:30px; margin-right: 1rem; cursor: pointer;"></li> -->
+                <button class="sign">Sign Up</button>
+                <button onclick="document.getElementById('id01').style.display='block'" class="login">Login</button>
+                <div id="id01" class="modal">
+
+                    <form class="modal-content" name="messageForm" onsubmit="validateForm()"
+                        style="text-align: center; padding-top: 1rem;">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            style="background-color:red;margin-top:-1.8rem; color: aliceblue;border: none;margin-right: -2rem;">X</button>
+                        <h1 style="color: white;">Login</h1>
+                        <div class="container">
+                            <input type="text" placeholder=" Username" name="uname" required
+                                style="height: 2rem; width: 16rem; margin-top: 2.8rem; border: none; border-bottom: 1.8px solid rgb(255, 255, 255); background-color: transparent; color: black; margin-left: 0rem;"><br>
+                            <input type="password" placeholder=" Password" name="password" required
+                                style="height: 2rem; width: 16rem; margin-top: 2.6rem; border: none; border-bottom: 1.8px solid rgb(255, 255, 255); background-color: transparent; color: black;"><br><br>
+                            <label style="margin-left: -8.5rem;">
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                            <br>
+                            <button type="submit"
+                                style="margin-top:3rem; padding-right: 1rem;height: 2.8rem; width: 12rem;font-size: 19px;border-radius: 15px;border: 0.6px solid transparent; background-color: white; font-family: 'Times New Roman', Times, serif; color: rgb(28, 28, 28);margin-right: 4rem;">Login
+                                <span style="padding-left: 6rem; font-weight: 800;"> > </span></button>
+                        </div>
+                        <h3
+                            style="margin-left: 1.9rem; margin-top: 8rem; letter-spacing: 0.3px; color: rgb(236, 236, 236); font-size: 15px;font-family: Arial, Helvetica, sans-serif; font-weight: 700;">
+                            Login Via</h3><br><br>
+                        <div class="social-link" style="display: flex; margin-top: -1.8rem; margin-left: 8rem;">
+                            <a href=""><img src="./image/fb.png"></a>
+                            <a href=""><img src="./image/insta.png"></a>
+                            <a href=""><img src="./image/twitter.png"></a>
+                        </div>
+                    </form>
+                </div>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="header research">
+        <h1>Research and Reference</h1>
+    </div>
+    <div class="rec">
+        <a href="https://instagram.com"><img src="image/form.png" alt="logo" width="500" height="500px" class="ref">
+        </a>
+
+        <div class="content">
+            <p>
+        For the login page of our website, we took the references from Instagram's login page. Instagram's login page looks simple but also clean and elegent. This is the element that pushed us to go for a similiar look because it matched the concept of our website. 
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="site">
+        <div class="res-home">
+            <p>
+           Our login page is made using JavaScript and it pops-up when clicked on the login button on navigation-bar. We have altered our login page by adding color to the background and addding elements like a remember me option.     
+            </p>
+        </div>
+        <div class="photo">
+            <a href="register.html"><img src="image/form2.png" alt="Home Page" width="500" height="500px"
+                    class="src"></a>
+        </div>
+    </div>
+    <hr class="hr-line">
+    <div class="rec">
+        <a href="https://www.bonsaiempire.com/"><img src="image/header.png" alt="header source photo" width="650px"
+                class="ref">
+        </a>
+
+        <div class="content">
+            <p>
+            The reference for our navigation bar has been taken from a community built website that provides various kind of informations regarding bonsai and caring for them. We decided to create a similar navigation-bar for our website because it matched our color theme.
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="site">
+        <div class="res-home">
+            <p>
+                Quiet a few elements have been changed in the navigation bar of our website. Factors like the search button, cart button, and login and sign up buttons have been modified to create a slightly different look according to the need od our website.
+            </p>
+        </div>
+        <div class="photo">
+            <a href="index.html"><img src="image/header2.png" alt="Header photo" width="650px" class="src"></a>
+        </div>
+    </div>
+    <hr class="hr-line">
+    <div class="rec">
+        <a href="https://www.bonsaiempire.com/"><img src="image/footer.png" alt="footer source photo" width="650px"
+                class="ref">
+        </a>
+
+        <div class="content">
+            <p>
+                The footer for our website has also been referenced from the Bonsai Empire website. We liked the structure of the footer and the designing which complemented the website. The footer brought together the whole website and made it look complete.
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="site">
+        <div class="res-home">
+            <p>
+                Although we liked the structure of the footer, we modified a lot of elements to make it match the overall feel of the website and the color theme we had choosen. We also added things like a copyright notice, links to other pages of our website, the services we provide and also a portion for contact us.  
+            </p>
+        </div>
+        <div class="photo">
+            <a href="index.html"><img src="image/footer2.png" alt="Home Page" width="650px" class="src"></a>
+        </div>
+    </div>
+    <hr class="hr-line">
+    <div class="rec">
+        <a href="https://www.alibaba.com/"><img src="image/product.png" alt="product reference photo" width="650px"
+                class="ref">
+        </a>
+
+        <div class="content">
+            <p>
+                Our product page is based on reference from the product page of famous e-commerce website, Alibaba. We browsed through different websites and decided to use Alibaba's product page for the reference because it was the closest to the wireframe we had come up with.
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="site">
+        <div class="res-home">
+            <p style="font-size: 33px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                We decided to change the outlook and go for a more simplified look which is why we added three product cards per row to make it look cleaner and also an add to card button to simplify the customer experience. Both the actual and the discounted price are displayed below the products along with the names.  
+            </p>
+        </div>
+        <div class="photo">
+            <a href="product.html"><img src="image/product2.png" alt="product site" width="650px" class="src"></a>
+        </div>
+    </div>
+    <hr class="hr-line">
+    <div class="rec">
+        <a href="https://sharmaanand.com.np/#about"><img src="image/about.png" alt="about us reference" width="650px"
+                class="ref">
+        </a>
+
+        <div class="content">
+            <p>
+                After reviewing different about us sections, we went for a personal portfolio which used designing similar to the one we were searching for.  
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="site">
+        <div class="res-home">
+            <p>
+                From the reference about us site we replaced Download CV to View CV and placed it just below the photo
+                to make it more relevant for four people to appear in a single view of laptop screen with borders.
+            </p>
+        </div>
+        <div class="photo">
+            <a href="about.html"><img src="image/about2.png" alt="about page photo" width="650px" class="src"></a>
+        </div>
+    </div>
+
+    </div>
+    <hr class="hr-line">
+    <div class="rec">
+        <a href="https://www.bonsaiempire.com/blog"><img src="image/blog.png" alt="blog reference" width="650px"
+                class="ref">
+        </a>
+
+        <div class="content">
+            <p>
+                We have selected the bonsai empire blog page section. This website has a very good card design which
+                inspired us to take it as reference.
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="site">
+        <div class="res-home">
+            <p>
+                Likewise, the blog page from reference has similar look but the see more button has been removed to make
+                it clean. And some hover effect with shading and color changing text has been added with making the card
+                bigger when hovering looks mersmerizing.
+            </p>
+        </div>
+        <div class="photo">
+            <a href="blog.html"><img src="image/blog2.png" alt="Blog page photo" width="650px" class="src"></a>
+        </div>
+    </div>
+
+    </div>
+    <hr class="hr-line">
+
+    <table>
+        <th style="color: purple;">Reference Name</th>
+        <th style="color: purple;">Link</th>
+
+
+        <tr>
+            <td style="font-size: 20px;">Form</td>
+            <td style="cursor: pointer; color: rgb(39, 39, 158);"> <a href="https://www.instagram.com">Instagram</a></a>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 20px;">Header and Footer</td>
+            <td style="cursor: pointer; color: rgb(39, 39, 158);"> <a href="https://www.bonsaiempire.com">Bonsai
+                    Empire</a></a></td>
+        </tr>
+        <tr>
+            <td style="font-size: 20px;">Product page</td>
+            <td style="cursor: pointer; color: rgb(39, 39, 158);"> <a href="https://www.alibaba.com">Alibaba</a></a>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 20px;">Blog</td>
+            <td style="cursor: pointer; color: rgb(39, 39, 158);"> <a href="https://www.bonsaiempire.com/blog">Bonsai
+                    Empire</a></a></td>
+        </tr>
+        <tr>
+            <td style="font-size: 20px;">About Us</td>
+            <td style="cursor: pointer; color: rgb(39, 39, 158);"> <a
+                    href="https://sharmaanand.com.np/#about">Portfolio</a></a></td>
+        </tr>
+    </table>
+    <footer id="footer" style="height: 15rem; background-color: #D8EAD6; margin-top: 5rem;">
+        <img src="./image/flogo.png" style="height:6rem; width: 4.7rem; margin-top: 2rem; margin-left: 5.5rem;">
+        <p style=" margin-left: 4rem; margin-top: 1rem; ">Copyright <span>&copy</span> Breathe Bonsai inc. <br>all
+            rights reserved
+        </p>
+        <div class="footer-link" style=" margin-left: 33rem; margin-top: -8.5rem;">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="footer-link" style=" margin-left: 48rem; margin-top: -10.5rem;">
+            <h2>Our Services</h2>
+            <ul>
+                <li><a href="">Free Shipping</a></li>
+                <li><a href="">Secure Payment</a></li>
+                <li><a href="">Customer Support</a></li>
+            </ul>
+        </div>
+        <div style="float:right; margin-right: 9rem; margin-top: -8.5rem;" class="footer-link">
+            <h2>Contact Us</h2>
+            <p style="padding-top: 9px; color: black;font-weight: 500; font-size: 19px; text-decoration: none;">
+                9814848773</p>
+            <p style="padding-top: 5px; color: black;font-weight: 500; font-size: 19px; text-decoration: none;">
+                hrithikrajnk@gmail.com</p>
+            <p style="padding-top: 5px; color: black;font-weight: 500; font-size: 19px; text-decoration: none;">
+                Balkumari,Kathmandu</p>
+
+            <div class="social-link" style="display: flex; margin-top: 1rem;">
+                <a href=""><img src="./image/fb.png"></a>
+                <a href=""><img src="./image/insta.png"></a>
+                <a href=""><img src="./image/twitter.png"></a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script>
+        function validateForm() {
+            var firstName = document.forms["messageForm"]["uname"].value;
+            var password = document.forms["messageForm"]["password"].value;
+
+            //alert(messageDetails);
+            if (firstName == "" || password == "") {
+                alert("Empty fields are present!!! please enter the values...")
+
+            }
+            else {
+                alert("Thank you for your feedback!!!")
+            }
+        }
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

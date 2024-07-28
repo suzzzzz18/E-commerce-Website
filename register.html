@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 28%; /* Full width */
+  height: 74%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  margin-top: 5rem;
+  margin-left: 30rem;
+  background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );  
+}
+.modal-content {
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.social-link a img{
+    height: 1.7rem;
+    width: 1.7rem;
+    padding: 3px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<div id="id01" class="modal">
+  
+  <form class="modal-content" name = "messageForm" onsubmit="validateForm()" style="text-align: center; padding-top: 1rem;">
+    <h1 style="color: white;">Login</h1>
+    <div class="container">
+      <input type="text" placeholder=" Username" name="uname" required style="height: 2rem; width: 16rem; margin-top: 2.8rem; border: none; border-bottom: 1.8px solid rgb(255, 255, 255); background-color: transparent; color: black;"><br>
+      <input type="password" placeholder=" Password" name="password" required style="height: 2rem; width: 16rem; margin-top: 2.6rem; border: none; border-bottom: 1.8px solid rgb(255, 255, 255); background-color: transparent; color: black;"><br><br>
+      <label style="margin-left: -8.5rem;">
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <br>
+      <button type="submit" style="margin-top:3rem; padding-right: 1rem;height: 2.8rem; width: 12rem;font-size: 19px;border-radius: 15px;border: 0.6px solid transparent; background-color: white; font-family: 'Times New Roman', Times, serif; color: rgb(28, 28, 28);">Login <span style="padding-left: 6rem; font-weight: 800;"> > </span></button>
+    </div>
+    <h3 style=" text-align: center; margin-top: 2rem; letter-spacing: 0.3px; color: rgb(236, 236, 236); font-size: 15px;font-family: Arial, Helvetica, sans-serif; font-weight: 700;">Login Via</h3><br><br>
+    <div class="social-link" style="display: flex; margin-top: -2.7rem; margin-left: 7rem;">
+        <a href=""><img src="./image/fb.png"></a>
+        <a href=""><img src="./image/insta.png"></a>
+        <a href=""><img src="./image/twitter.png"></a>
+       </div>
+        </form>
+    </div>
+
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
