@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    background: url(./image/image1.jpg);
+    height: 45rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.9; */
+}
+
+
+nav {
+    padding: 1.7rem 4rem 0rem 3.5rem;
+}
+
+.navmenu {
+    background-color: rgb(255, 255, 255);
+    height: 5.2rem;
+    width: 84%;
+    border: 0px transparent;
+    border-radius: 8px;
+    display: block;
+    position: fixed;
+
+}
+
+.navmenu ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+}
+
+.navmenu ul li {
+    margin: 30px 0px 0px 20px;
+}
+
+.navmenu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(96, 96, 96);
+    font-weight: 500;
+    padding: 5px;
+}
+.active,
+.navmenu ul li a:hover {
+    color: #070707;
+    /* background-color: #94d851;  */
+    /* padding: 7px; */
+    /* border-radius: 7px; */
+    /* text-transform: uppercase; */
+
+}
+
+h1 {
+    margin-top: 21px;
+    margin-left: 15px;
+    font-size: 33px;
+    color: rgb(55, 55, 55);
+    font-weight: 500;
+}
+
+input[type=text] {
+    padding: 6px;
+    margin-top: 25px;
+    margin-left: 13rem;
+    font-size: 17px;
+    border-right: none;
+    border: 1px solid rgb(84, 84, 84);
+
+}
+
+form button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 25px;
+    margin-right: 16px;
+    background: rgb(240, 240, 240);
+    font-size: 17px;
+    cursor: pointer;
+    border-left: none;
+}
+
+.login {
+    height: 35px;
+    width: 70px;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #94d851;
+    background-color: white;
+    color: #94d851;
+}
+
+.login:hover {
+    background-color: #94d851;
+    color: white;
+}
+
+.sign {
+    height: 35px;
+    width: 80px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background-color: #94d851;
+}
+
+.sign:hover {
+    background-color: transparent;
+    border: 1px solid #94d851;
+    color: #94d851;
+    cursor: pointer;
+}
+
+.text {
+    margin-top: 13rem;
+    margin-left: 5.5rem;
+}
+
+.text h1 {
+    color: white;
+    padding: 10px;
+    font-size: 3rem;
+}
+
+.sliding-text {
+    animation: SlideInFromLeft 1s linear forwards;
+}
+
+@keyframes SlideInFromLeft {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.main {
+    height: 15vh;
+    width: 25vw;
+    margin-top: 1.6rem;
+    margin-left: 1.8rem;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    border: 1px solid rgb(62, 62, 62);
+    border-style: dashed;
+}
+
+.box {
+    width: 78rem;
+    margin-top: 4rem;
+    margin-left: 6rem;
+    background-color: #f2f2f2;
+}
+
+.product {
+    float: right;
+    margin-top: -8rem;
+
+}
+
+.product1:hover {
+    opacity: 0.75;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.btn-subscribe {
+    color: rgb(255, 255, 255);
+    background-color: #94d851;
+    font-size: 18px;
+    height: 40px;
+    width: 110px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-subscribe:hover {
+    background-color: #94d851;
+    opacity: 0.6;
+}
+
+.footer-link ul {
+    list-style: none;
+}
+
+.footer-link ul li {
+    margin: 13px 0px 0px 5px;
+}
+
+.footer-link ul li a {
+    text-decoration: none;
+    font-size: 19px;
+    color: rgb(60, 60, 60);
+    font-weight: 500;
+}
+
+.footer-link ul li a:hover {
+    color: #ffffff;
+}
+
+.social-link a img {
+    height: 2.2rem;
+    width: 2.2rem;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.social-link a img:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    z-index: 1;
+    /* Sit on top */
+    position: fixed;
+    width: 28%;
+    /* Full width */
+    height: 74%;
+    /* Full height */
+    margin-top: 5rem;
+    margin-left: 30rem;
+    background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
+}
+
+.modal-content {
+    margin: 5% auto 25% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+form .social-link a img {
+    height: 1.7rem;
+    width: 1.7rem;
+    padding: 3px;
+    cursor: pointer;
+}

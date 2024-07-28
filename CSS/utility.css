@@ -1,0 +1,17 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=PT+Serif&family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@500&family=Mukta:wght@300&family=PT+Serif&family=Yeon+Sung&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Kodchasan:wght@500&family=Mukta:wght@300&family=PT+Serif&family=Yeon+Sung&display=swap');
+
+:root {
+    --font1: 'Mukta', sans-serif;
+    --font2: 'PT Serif', serif;
+    --font3: 'Yeon Sung', cursive;
+    --font4: 'Kodchasan', sans-serif;
+    --font5: 'Inconsolata', monospace;
+}
+
+.m-auto {
+    margin: auto;
+}

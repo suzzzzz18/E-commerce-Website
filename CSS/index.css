@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.mySlides {
+    display: none;
+    width: 100vw;
+}
+img {
+    vertical-align: middle;
+    height: 95vh;
+
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+nav {
+    padding: 3rem 5rem 0rem 3.5rem;
+}
+
+.navmenu {
+    background-color: rgb(255, 255, 255);
+    height: 5.2rem;
+    width: 84%;
+    border: 0px transparent;
+    border-radius: 8px;
+    display: block;
+    position: fixed;
+
+}
+
+.navmenu ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+}
+
+.navmenu ul li {
+    margin: 30px 0px 0px 20px;
+}
+
+.navmenu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(96, 96, 96);
+    font-weight: 500;
+    padding: 5px;
+}
+.active,
+.navmenu ul li a:hover {
+    color: #070707;
+    /* background-color: #94d851;  */
+    /* padding: 7px; */
+    /* border-radius: 7px; */
+    /* text-transform: uppercase; */
+
+}
+
+h1 {
+    margin-top: 21px;
+    margin-left: 15px;
+    font-size: 33px;
+    color: rgb(55, 55, 55);
+    font-weight: 500;
+}
+
+input[type=text] {
+    padding: 6px;
+    margin-top: 25px;
+    margin-left: 13rem;
+    font-size: 17px;
+    border-right: none;
+    border: 1px solid rgb(84, 84, 84);
+
+}
+
+form button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 25px;
+    margin-right: 16px;
+    background: rgb(240, 240, 240);
+    font-size: 17px;
+    cursor: pointer;
+    border-left: none;
+}
+
+.login {
+    height: 35px;
+    width: 70px;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #94d851;
+    background-color: white;
+    color: #94d851;
+}
+
+.login:hover {
+    background-color: #94d851;
+    color: white;
+}
+
+.sign {
+    height: 35px;
+    width: 80px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background-color: #94d851;
+}
+
+.sign:hover {
+    background-color: transparent;
+    border: 1px solid #94d851;
+    color: #94d851;
+    cursor: pointer;
+}
+.image_heading {
+    color: #720f0f;
+    font-size: 35px;
+    bottom: 8px;
+    width: 100%;
+    margin-top: -25rem;
+}
+
+.image_para {
+    margin-left: 8.5rem;
+    margin-top: 2.5rem;
+    color: rgb(56, 56, 56);
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    z-index: 1;
+    /* Sit on top */
+    position: fixed;
+    width: 28%;
+    /* Full width */
+    height: 74%;
+    /* Full height */
+    margin-top: 5rem;
+    margin-left: 30rem;
+    background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
+}
+
+.modal-content {
+    margin: 5% auto 25% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+form .social-link a img {
+    height: 1.7rem;
+    width: 1.7rem;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.main {
+    height: 15vh;
+    width: 25vw;
+    margin-top: 1.6rem;
+    margin-left: 1.35rem;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    border: 1px solid rgb(62, 62, 62);
+    border-style: dashed;
+}
+
+.box {
+    width: 76rem;
+    height: 10rem;
+    margin-top: 45rem;
+    margin-left: 7rem;
+    background-color: #f2f2f2;
+}
+
+.product {
+    float: right;
+    margin-top: -8rem;
+
+}
+
+.product1:hover {
+    opacity: 0.75;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.btn-subscribe {
+    color: rgb(255, 255, 255);
+    background-color: #94d851;
+    font-size: 18px;
+    height: 40px;
+    width: 110px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-subscribe:hover {
+    background-color: #94d851;
+    opacity: 0.6;
+}
+
+.footer-link ul {
+    list-style: none;
+}
+
+.footer-link ul li {
+    margin: 13px 0px 0px 5px;
+}
+
+.footer-link ul li a {
+    text-decoration: none;
+    font-size: 19px;
+    color: rgb(60, 60, 60);
+    font-weight: 500;
+}
+
+.footer-link ul li a:hover {
+    color: #ffffff;
+}
+
+.social-link a img {
+    height: 2.2rem;
+    width: 2.2rem;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.social-link a img:hover {
+    opacity: 0.7;
+}
